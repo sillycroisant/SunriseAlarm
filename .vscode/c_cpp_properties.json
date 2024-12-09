@@ -1,0 +1,72 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "C:/Users/HUY/Desktop/SunriseAlarm/include",
+                "C:/Users/HUY/Desktop/SunriseAlarm/src",
+                "C:/Users/HUY/.platformio/packages/framework-cmsis/CMSIS/Include",
+                "C:/Users/HUY/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/cores/arduino",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/variants/SparkFun_SAMD21_Dev",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/HID",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/I2S/src",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/LilyMini_Guide/src",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SAMD_AnalogCorrection/src",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SDU/src",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SPI",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/USBHost/src",
+                "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/Wire",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/HUY/Desktop/SunriseAlarm/include",
+                    "C:/Users/HUY/Desktop/SunriseAlarm/src",
+                    "C:/Users/HUY/.platformio/packages/framework-cmsis/CMSIS/Include",
+                    "C:/Users/HUY/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/cores/arduino",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/variants/SparkFun_SAMD21_Dev",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/HID",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/I2S/src",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/LilyMini_Guide/src",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SAMD_AnalogCorrection/src",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SDU/src",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/SPI",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/USBHost/src",
+                    "C:/Users/HUY/.platformio/packages/framework-arduino-samd-sparkfun/libraries/Wire",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60116",
+                "ARDUINO_SAMD_ZERO",
+                "__SAMD21G18A__",
+                "ARDUINO=10805",
+                "F_CPU=48000000L",
+                "USBCON",
+                "USB_VID=0x1B4F",
+                "USB_PID=0x8D21",
+                "USB_PRODUCT=\"SparkFun SAMD21\"",
+                "USB_MANUFACTURER=\"SparkFun\"",
+                "ARDUINO_ARCH_SAMD",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/HUY/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m0plus",
+                "-mthumb",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
