@@ -1,0 +1,3 @@
+19/12/2024
+- thêm cái bật đèn khi đến giờ đã hẹn, nhưng mà giờ đã hẹn hiện vẫn đang set thủ công = biến thôi
+> sắp tới tìm cách hoàn thiện interrupts 4 cái buttons và cho phép tùy chọn và điều chỉnh các chế độ dựa vào các nút.
