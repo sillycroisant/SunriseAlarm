@@ -1,13 +1,13 @@
 #include <SPI.h> 
 #include "define.h" //used
 
-#define button_3 6
-#define button_4 7
-
 void displayTime();
+void IRAM_ATTR setHour();
+void IRAM_ATTR setMinute();
 void getLunarDate();
-void IRAM_ATTR turnOnLed();
+// void IRAM_ATTR setTimeButton(); //button 3 for setting time
 void IRAM_ATTR turnOffLed();
+void setTimeScreen();
 void wakeUp();
 int char2int(char c[]);
 
@@ -23,18 +23,16 @@ void setup() {
     pinMode(button_1, INPUT_PULLUP);
     pinMode(button_2, INPUT_PULLUP);
     pinMode(button_3, INPUT_PULLUP);
-    pinMode(button_4, INPUT_PULLUP);
 
-    attachInterrupt(button_1, turnOnLed, FALLING);
-    attachInterrupt(button_2, turnOffLed, FALLING);
+    attachInterrupt(button_1, setHour, FALLING);
+    attachInterrupt(button_2, setMinute, FALLING);
     attachInterrupt(button_3, turnOffLed, FALLING);
-    attachInterrupt(button_4, turnOnLed, FALLING);
 
     pinMode(ledPin, OUTPUT);
     digitalWrite(ledPin, LOW);
 
     //Setup RTC
-    Wire.begin(SDA, SCL);
+    Wire.begin(SDA,SCL);
     rtc.begin();
     if(!rtc.isrunning()){
         rtc.adjust(DateTime(__DATE__, __TIME__));
